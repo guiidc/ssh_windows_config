@@ -45,3 +45,15 @@ Set the Variable value: field to path-to-ssh.exe (typically C:\Windows\System32\
 Click OK to dismiss the New User Variable dialog.
 Click OK to dismiss the Environment Variables dialog.
 Retry the steps in Try Git + SSH above.
+
+Create a file named config (withou extension) on your ssh directory ~/.ssh
+and this is the example config to use named ssh keys
+
+Host github.com
+    IdentityFile ~/.ssh/github
+
+Host gitlab.com
+    IdentityFile ~/.ssh/gitlab
+
+Host bitbucket.com
+    IdentityFile ~/.ssh/bitbucket
